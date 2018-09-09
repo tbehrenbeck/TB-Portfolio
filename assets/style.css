@@ -18,7 +18,7 @@ nav {
   padding: 0 20px 0 0;
 }
 .links {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-shadow: -0.5px -0.5px 0 #ffffff, 0.5px -0.5px 0 #ffffff,
     -0.5px 0.5px 0 #ffffff, 0.5px 0.5px 0 #ffffff;
   color: #2c5c71;
@@ -44,14 +44,47 @@ nav {
 #bio-container {
   padding: 60px 0 0 0;
 }
+#bio h4 {
+  font-size: 2rem;
+  padding-top: 40px;
+}
 #bio p {
   font-size: 1.1rem;
+}
+#bio #resume-btn {
+  background-color: #2c5c71;
+  margin-top: 15px;
 }
 #prof {
   border-radius: 50%;
   height: 300px;
 }
 
+/* Works Banner */
+#index-banner {
+  min-height: 900px;
+}
+#portfolio-section {
+  width: 85%;
+  margin: auto;
+  margin-top: 85px;
+  margin-bottom: 65px;
+}
+.toolbar button {
+  margin: 5px;
+  font-size: 1rem;
+}
+.toolbar button:hover {
+  color: #ffffff;
+  background-color: #2c5c71;
+}
+.toolbar button:focus {
+  color: #ffffff;
+  background-color: #2c5c71;
+}
+#portfolio {
+  padding-top: 35px;
+}
 /*Works*/
 #portfolio {
   margin: 1rem 0;
