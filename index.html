@@ -21,12 +21,14 @@
 <body>
 
     <div class="section1 no-pad-bot" id="intro-banner">
+        <span id=home></span>
         <div class="navbar-fixed">
             <nav class="z-depth-0">
                 <div class="nav-wrapper">
                     <span class="name-logo">Tommie Behrenbeck</span>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul id="nav-links" class="right hide-on-med-and-down">
+                        <li><a href="#home" class="links" id="homeLink">Home</a></li>
                         <li><a href="#aboutMe" class="links" id="aboutLink">About Me</a></li>
                         <li><a href="#works" class="links" id="worksLink">Works</a></li>
                         <li><a href="#contact" class="links" id="contactLink">Contact</a></li>
@@ -35,6 +37,7 @@
             </nav>
         </div>
         <ul class="sidenav" id="mobile-demo">
+            <li><a href="#home" class="links" id="homeLink">Home</a></li>
             <li><a href="#aboutMe" class="links" id="aboutLink">About Me</a></li>
             <li><a href="#works" class="links" id="worksLink">Works</a></li>
             <li><a href="#contact" class="links" id="contactLink">Contact</a></li>
@@ -42,7 +45,7 @@
 
         <div id="intro-text" class="container">
             <br><br>
-            <h1 class="header center">Design/ Developer</h1>
+            <h1 class="header center">Designer/ Developer</h1>
             <div class="row center">
                 <h5 class="header col s12 light">Design focused web developer Lorem, ipsum dolor sit amet consectetur
                     adipisicing
@@ -54,10 +57,11 @@
     </div>
 
     <div class="section no-pad-bot" id="aboutMe-banner">
-        <div class="container" id="aboutMe">
+        <span id="aboutMe"></span>
+        <div class="container" id="bio-container">
             <br><br>
             <div class="row">
-                <div class="col l6">
+                <div class="col l6" id="bio">
                     <h4>Meet Tommie Behrenbeck</h4>
                     <p>
                         Tony is a Front-end Developer with proficiencies in Graphic & Interactive Design as well as
@@ -77,7 +81,8 @@
     </div>
 
     <div class="section no-pad-bot" id="index-banner">
-        <div class="container center" id="works">
+        <span id="works"></span>
+        <div class="container center">
             <div class="toolbar mb2 mt2">
                 <button class="btn fil-cat" href="" data-rel="all">All</button>
                 <button class="btn fil-cat" data-rel="fullStack">FULL-STACK</button>
@@ -116,7 +121,8 @@
     </div>
 
     <footer class="page-footer orange">
-        <div class="container" id="contact">
+        <span id="contact"></span>
+        <div class="container">
             <div class="row">
                 <div class="col l12">
                     <form method="POST" action="https://formspree.io/behrenbt@gmail.com">

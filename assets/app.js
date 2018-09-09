@@ -25,6 +25,22 @@ $(function() {
 // Scroll Animation
 
 $(document).ready(function() {
+  $("#homeLink").on("click", function(event) {
+    event.preventDefault();
+    var hash = this.hash;
+
+    if ($(hash).offset()) {
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top
+        },
+        800,
+        function() {}
+      );
+    }
+  });
+});
+$(document).ready(function() {
   $("#aboutLink").on("click", function(event) {
     event.preventDefault();
     var hash = this.hash;
