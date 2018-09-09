@@ -21,3 +21,54 @@ $(function() {
     }, 300);
   });
 });
+
+// Scroll Animation
+
+$(document).ready(function() {
+  $("#aboutLink").on("click", function(event) {
+    event.preventDefault();
+    var hash = this.hash;
+
+    if ($(hash).offset()) {
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top
+        },
+        800,
+        function() {}
+      );
+    }
+  });
+});
+$(document).ready(function() {
+  $("#worksLink").on("click", function(event) {
+    event.preventDefault();
+    var hash = this.hash;
+
+    if ($(hash).offset()) {
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top
+        },
+        800,
+        function() {}
+      );
+    }
+  });
+});
+$(document).ready(function() {
+  $("#contactLink").on("click", function(event) {
+    event.preventDefault();
+    var hash = this.hash;
+
+    if ($(hash).offset()) {
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top
+        },
+        800,
+        function() {}
+      );
+    }
+  });
+});
