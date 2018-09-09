@@ -69,11 +69,9 @@
                         a bachelors degree in business management and has years of experience in the hospitality
                         industry.
                     </p>
-
                     <a id="resume-btn" class="waves-effect waves-light btn-small z-depth-1" href="assets/img/T.Behrenbeck_Resume08_2018.pdf"
                         target="_blank">Resume</a>
                 </div>
-
                 <div class="col l6  right-align">
                     <img id="prof" src="assets/img/prof.jpg">
                 </div>
@@ -125,20 +123,24 @@
     <footer class="page-footer">
         <span id="contact"></span>
         <div class="container">
-            <div class="row">
-                <div class="col l12">
+            <div class="row" id="contact-section">
+                <div class="col s12">
+                    <h4 class="center">Get in Touch</h4>
                     <form method="POST" action="https://formspree.io/behrenbt@gmail.com">
-                        <input type="name" name="name" placeholder="First & Last Name">
-                        <input type="email" name="email" placeholder="Your email">
-                        <textarea name="message" placeholder="Your message"></textarea>
-                        <button type="submit">Send</button>
+                        <input type="text" id="form-name" name="name" placeholder="Your Name">
+                        <input type="email" id="form-email" name="email" placeholder="Your Email">
+                        <input type="text" id="form-subject" name="subject" placeholder="Subject">
+                        <textarea name="message" id="form-message" placeholder="Your message"></textarea>
+
+                        <button id="form-send" type="submit">Send</button>
                     </form>
                 </div>
             </div>
         </div>
         <div class="footer-copyright">
             <div class="container">
-                <a class="orange-text right text-lighten-3" href="#">icons</a>
+                <a href="https://github.com/tbehrenbeck" target="_blank"><i class="fab right fa-github-square fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/tbehrenbeck/" target="_blank"><i class="fab right fa-linkedin fa-2x"></i></a>
             </div>
         </div>
     </footer>
