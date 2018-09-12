@@ -143,6 +143,7 @@ nav {
   border: 0;
   padding: 0;
 }
+/**/
 .page-footer {
   background: rgba(223, 231, 233, 0.8);
 }
@@ -217,7 +218,6 @@ form {
   color: #2c5c71;
 }
 /* media queries */
-
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
   #intro-text h1 {
@@ -230,6 +230,9 @@ form {
     font-size: 65px;
     padding-top: 30px;
   }
+  #prof {
+    height: 280px;
+  }
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -237,11 +240,67 @@ form {
     font-size: 47px;
     padding-top: 50px;
   }
+  #bio-container {
+    margin-left: 5%;
+    padding-top: 70px;
+  }
+  #prof {
+    height: 240px;
+  }
+  #portfolio {
+    margin: 1rem 0;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 1rem;
+    -moz-column-gap: 1rem;
+    column-gap: 1rem;
+    -webkit-column-width: 49.99%;
+    -moz-column-width: 49.99%;
+    column-width: 49.99%;
+  }
+  form {
+    width: 85%;
+  }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   #intro-text h1 {
     font-size: 35px;
+  }
+  .name-logo {
+    font-size: 1.7rem;
+  }
+  #prof {
+    height: 200px;
+  }
+  #bio h4 {
+    font-size: 1.8rem;
+    padding-top: 5px;
+  }
+  #bio p {
+    font-size: 1rem;
+  }
+  #bio-container {
+    padding-top: 5px;
+  }
+  #index-banner {
+    min-height: 500px;
+  }
+  #portfolio {
+    margin: 1rem 0;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-gap: 1rem;
+    -moz-column-gap: 1rem;
+    column-gap: 1rem;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+  .btn {
+    padding: 0.5rem 2rem;
   }
 }
 /* Custom, iPhone Retina */
