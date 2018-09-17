@@ -26,7 +26,7 @@
         <div class="navbar-fixed">
             <nav class="z-depth-0">
                 <div class="nav-wrapper">
-                    <span class="name-logo">Tommie Behrenbeck</span>
+                    <!-- <span class="name-logo">Tommie Behrenbeck</span> -->
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul id="nav-links" class="right hide-on-med-and-down">
                         <li><a href="#home" class="links" id="homeLink">Home</a></li>
@@ -46,7 +46,7 @@
 
         <div id="intro-text" class="container">
             <br><br>
-            <h1 class="animated zoomIn delay-5s header center">Designer/ Developer</h1>
+            <h1 class="header center">Tommie Behrenbeck</h1>
             <br><br>
         </div>
     </div>
@@ -57,7 +57,7 @@
             <br><br>
             <div class="row">
                 <div class="col s12 m8 l6" id="bio">
-                    <h4>Meet Tommie Behrenbeck</h4>
+                    <h4>About <span style="color: #00769c">Me</span></h4>
                     <p>
                         Tommie is a design focused web developer who enjoys bridging together clean aesthetics and
                         functionality.
@@ -68,7 +68,7 @@
                         target="_blank">Resume</a>
                 </div>
                 <div class="col s12 m4 l6  right-align">
-                    <img id="prof" src="assets/img/prof.jpg">
+                    <img id="prof" src="assets/img/wideprof.jpg">
                 </div>
             </div>
             <br><br>
@@ -88,39 +88,119 @@
 
     <div class="section no-pad-bot" id="index-banner">
         <span id="works"></span>
-        <div class="container center" id="portfolio-section">
-            <div class="toolbar mb2 mt2">
-                <button class="btn fil-cat z-depth-0" href="" data-rel="all">All</button>
-                <button class="btn fil-cat z-depth-0" data-rel="fullStack">FULL-STACK</button>
-                <button class="btn fil-cat z-depth-0" data-rel="front">FRONT-END</button>
-                <button class="btn fil-cat z-depth-0" data-rel="cli">CLI</button>
+
+        <section class="works">
+            <div class="works-container">
+                <div class="works-category">
+                    <ul>
+                        <li><a href="#" class="selected" data-filter="*" id="filter-a">All</a></li>
+                        <li><a href="#" data-filter="fullStack" id="filter-a">FULL-STACK</a></li>
+                        <li><a href="#" data-filter="frontEnd" id="filter-a">FRONT-END</a></li>
+                        <li><a href="#" data-filter="cli" id="filter-a">CLI</a></li>
+                    </ul>
+                </div>
+                <!--end of category menu-->
+                <div class="all-works">
+                    <div class="work-one" data-filter="frontEnd">
+                        <a href="https://whispering-basin-96338.herokuapp.com" target="_blank">
+                            <div class="image-container">
+                                <img src="assets/img/fitfinder.png" alt="work name">
+                            </div>
+                            <!--end of image container-->
+                            <div class="des">
+                                <h4>Friend Finder</h4>
+                                <p>This is a compatibility-based application. Answer a few simple questions to find the
+                                    user you're most
+                                    compatible with.</p>
+                                <p><a href="https://github.com/tbehrenbeck/Friend-Finder" target="_blank"><i class="fab fa-github-square fa-3x"></i></a></p>
+                            </div>
+                            <!--end description-->
+                        </a>
+                    </div>
+                    <!--end of work one-->
+                    <div class="work-one" data-filter="cli">
+                        <a href="https://tbehrenbeck.github.io/bamazon-mysql-node-app" target="_blank">
+                            <div class="image-container">
+                                <img src="assets/img/bamazon.png" alt="work name">
+                            </div>
+                            <!--end of image container-->
+                            <div class="des">
+                                <h4>Bamazon</h4>
+                                <p>A CLI Amazon-like storefront utilizing MySQL for data input and storage.</p>
+                                <p><a href="https://github.com/tbehrenbeck/bamazon-mysql-node-app" target="_blank"><i
+                                            class="fab fa-github-square fa-3x"></i></a></p>
+                            </div>
+                            <!--end description-->
+                        </a>
+                    </div>
+                    <!--end of work one-->
+                    <div class="work-one" data-filter="fullStack">
+                        <a href="https://project2-ey.herokuapp.com" target="_blank">
+                            <div class="image-container">
+                                <img src="assets/img/macromeals.jpg" alt="work name">
+                            </div>
+                            <!--end of image container-->
+                            <div class="des">
+                                <h4>Macros + Meals</h4>
+                                <p>Optimize your nutrition and find recipes to fit your daily needs</p>
+                                <p><a href="https://github.com/tbehrenbeck/Macros-Meals" target="_blank"><i class="fab fa-github-square fa-3x"></i></a></p>
+                            </div>
+                            <!--end description-->
+                        </a>
+                    </div>
+                    <!--end of work one-->
+                    <div class="work-one" data-filter="cli">
+                        <a href="https://tbehrenbeck.github.io/liri-node-app" target="_blank">
+                            <div class="image-container">
+                                <img src="assets/img/liri.jpeg" alt="work name">
+                            </div>
+                            <!--end of image container-->
+                            <div class="des">
+                                <h4>Liri Bot</h4>
+                                <p>Liri is a Node command line app that allows you to search for songs, movies, and
+                                    upcoming concerts.</p>
+                                <p><a href="https://github.com/tbehrenbeck/liri-node-app" target="_blank"><i class="fab fa-github-square fa-3x"></i></a></p>
+                            </div>
+                            <!--end description-->
+                        </a>
+                    </div>
+                    <!--end of work one-->
+                    <div class="work-one" data-filter="frontEnd">
+                        <a href="https://tbehrenbeck.github.io/Where2/" target="_blank">
+                            <div class="image-container">
+                                <img src="assets/img/where2.png" alt="work name">
+                            </div>
+                            <!--end of image container-->
+                            <div class="des">
+                                <h4>where2</h4>
+                                <p>A web app that lets users plan and share a route consisting of three locations using
+                                    geocode data.</p>
+                                <p><a href="https://github.com/tbehrenbeck/Where2" target="_blank"><i class="fab fa-github-square fa-3x"></i></a></p>
+                            </div>
+                            <!--end description-->
+                        </a>
+                    </div>
+                    <!--end of work one-->
+                    <div class="work-one" data-filter="fullStack">
+                        <a href="https://powerful-gorge-88660.herokuapp.com/" target="_blank">
+                            <div class="image-container">
+                                <img src="assets/img/shoppingcart.png" alt="work name">
+                            </div>
+                            <!--end of image container-->
+                            <div class="des">
+                                <h4>Shopping Cart</h4>
+                                <p>This 'Eat-Da-Burger' app is a simple full stack to-do list utilizing mySQL database.</p>
+                                <p><a href="https://github.com/tbehrenbeck/Eat-Da-Burger" target="_blank"><i class="fab fa-github-square fa-3x"></i></a></p>
+                            </div>
+                            <!--end description-->
+                        </a>
+                    </div>
+                    <!--end of work one-->
+                </div>
+                <!--end of all works listing-->
             </div>
-
-            <div style="clear:both;"></div>
-            <div id="portfolio">
-                <div class="tile scale-anm front all">
-                    <img src="assets/img/fitfinder.png" alt="fitFinder" />
-                </div>
-                <div class="tile scale-anm cli all">
-                    <img src="assets/img/bamazon.png" alt="bamazon" />
-                </div>
-                <div class="tile scale-anm fullStack all">
-                    <img src="assets/img/macromeals.jpg" alt="macromeals" />
-                </div>
-                <div class="tile scale-anm cli all">
-                    <img src="assets/img/liri.jpeg" alt="liri" />
-                </div>
-                <div class="tile scale-anm front all">
-                    <img src="assets/img/where2.png" alt="where2" />
-                </div>
-                <div class="tile scale-anm fullStack all">
-                    <img src="assets/img/shoppingcart.png" alt="shoppingCart" />
-                </div>
-            </div>
-
-            <div style="clear:both;"></div>
-
-        </div>
+            <!--end of contaimner-->
+        </section>
     </div>
 
     <footer class="page-footer">

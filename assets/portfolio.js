@@ -16,21 +16,25 @@ $(document).ready(function() {
 });
 
 // Works Gallery
-$(function() {
-  var selectedClass = "";
-  $(".fil-cat").click(function() {
-    selectedClass = $(this).attr("data-rel");
-    $("#portfolio").fadeTo(400, 0.5);
-    $("#portfolio div")
-      .not("." + selectedClass)
-      .fadeOut()
-      .removeClass("scale-anm");
-    setTimeout(function() {
-      $("." + selectedClass)
-        .fadeIn()
-        .addClass("scale-anm");
-      $("#portfolio").fadeTo(300, 1);
-    }, 300);
+
+$(document).ready(function() {
+  $("a#filter-a").click(function() {
+    //hide all works by default
+    $(".work-one").addClass("filter-hide");
+    //show slected works based on the menu clicked
+    $(
+      ".work-one[data-filter='" + $(this).attr("data-filter") + "']"
+    ).removeClass("filter-hide");
+    //remove selected class to the link
+    $("a#filter-a").removeClass("selected");
+    //add selected class to the active link
+    $(this).addClass("selected");
+    return false;
+  });
+  //show all works for "all" menu
+  $('a[data-filter="*"]').click(function(event) {
+    $(".work-one").removeClass("filter-hide");
+    return false;
   });
 });
 
