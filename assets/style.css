@@ -161,19 +161,20 @@ nav .sidenav-trigger i {
 }
 .all-works {
   /* ----------- */
-  box-sizing: content-box;
+  /* box-sizing: content-box;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 640px;
+  width: 640px; */
   /* ----------- */
   margin-top: 2%;
   padding: 0 4%;
 }
 .work-one {
   /* --------- */
-  width: 290px;
+  /* width: 290px; */
   /* ---------- */
+  width: 300px;
   float: left;
   height: auto;
   border-radius: 5px;
